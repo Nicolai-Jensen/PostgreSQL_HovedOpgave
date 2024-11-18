@@ -40,6 +40,7 @@ ALTER TABLE public.game_data OWNER TO postgres;
 
 COPY public.game_data (user_id, game_id, body) FROM stdin;
 1	1	{"chips": 50, "money": 150, "gender": "male", "volume": 75, "rewards": "none"}
+2	1	{"chips": 50, "money": 10090, "gender": "male", "volume": 75, "rewards": "none"}
 \.
 
 
