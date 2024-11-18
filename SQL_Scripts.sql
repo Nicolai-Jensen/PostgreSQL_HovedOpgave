@@ -1,5 +1,5 @@
 UPDATE game_data
-SET body = '{"gender": "male", "money": 150, "chips": 50, "volume": 75, "rewards": "none"}'
+SET body = '{"gender": "female", "money": 150, "chips": 50, "volume": 75, "rewards": "none"}'
 WHERE game_id = 1;
 
 
