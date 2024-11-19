@@ -1,8 +1,13 @@
-UPDATE game_data
-SET body = '{"gender": "female", "money": 150, "chips": 50, "volume": 75, "rewards": "none"}'
-WHERE game_id = 1;
+SELECT * FROM "GameData";
 
-INSERT INTO game_data (user_id, game_id, body)
-VALUES (2, 1, '{"gender": "male", "money": 10090, "chips": 50, "volume": 75, "rewards": "none"}');
+ALTER TABLE "GameData" 
+    ALTER COLUMN "UserId" SET DEFAULT nextval('GameData_UserId_seq');
 
-SELECT * FROM game_data;
+
+
+
+
+pg_restore -U postgres -h localhost -p 5432 -d hovedOpgaveDatabase "path_to_your_dump_file.dump"
+
+
+pg_dump -U postgres -h localhost -p 5432 -d hovedOpgaveDatabase -F c -f "path_to_place\database_backup.dump"
