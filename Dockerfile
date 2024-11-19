@@ -7,7 +7,8 @@ ENV POSTGRES_PASSWORD=guest
 ENV POSTGRES_DB=game_data
 
 # Copy your database dump file into the image
-COPY database_dump.sql /docker-entrypoint-initdb.d/
+COPY database_backup.dump /tmp/database_backup.dump
+#CMD ["bash", "-c", "pg_restore -U postgres -d game_data /tmp/database_backup.dump && postgres"]
 
 # Expose the default PostgreSQL port
 EXPOSE 5431
