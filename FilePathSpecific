@@ -1,3 +1,3 @@
 TB file path ->
-psql -U postgres -d game_data -f "D:\Program Files (x86)\Skole\5.Sem\HovdeOpgave\Spillet\DataBase\PostgreSQL_HovedOpgave\database_dump.sql"
-pg_dump -U postgres -d game_data -f "D:\Program Files (x86)\Skole\5.Sem\HovdeOpgave\Spillet\DataBase\PostgreSQL_HovedOpgave\database_dump.sql"
+psql -U postgres -d game_data -f "D:\Program Files (x86)\Skole\5.Sem\HovdeOpgave\Spillet\DataBase\PostgreSQL_HovedOpgave\database_dump.dump"
+pg_dump -U postgres -d game_data -f "D:\Program Files (x86)\Skole\5.Sem\HovdeOpgave\Spillet\DataBase\PostgreSQL_HovedOpgave\database_dump.dump"
