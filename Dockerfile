@@ -7,8 +7,12 @@ ENV POSTGRES_PASSWORD=guest
 ENV POSTGRES_DB=game_data
 
 # Copy your database dump file into the image
-COPY database_backup.dump /tmp/database_backup.dump
-#CMD ["bash", "-c", "pg_restore -U postgres -d game_data /tmp/database_backup.dump && postgres"]
+COPY new_database_backup.dump /tmp/new_database_backup.dump
+
+
+#CMD [ "pg_restore -U postgres -d game_data -h localhost -p 5431 database_backup.dump" ]
 
 # Expose the default PostgreSQL port
 EXPOSE 5431
+
+
