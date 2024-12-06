@@ -9,8 +9,8 @@ ENV POSTGRES_DB=game_data
 # Copy your database dump file into the image
 COPY new_database_backup.dump /tmp/new_database_backup.dump
 
-
-#CMD [ "pg_restore -U postgres -d game_data -h localhost -p 5431 database_backup.dump" ]
+# Set PostgreSQL configuration overrides
+CMD ["postgres", "-c", "max_connections=1000", "-c", "shared_buffers=6200MB"]
 
 # Expose the default PostgreSQL port
 EXPOSE 5431
