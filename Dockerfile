@@ -1,7 +1,7 @@
 # Use the official PostgreSQL image as the base
 FROM postgres:17
 
-# Set environment variables for PostgreSQL (optional but recommended)
+# Set environment variables for PostgreSQL
 ENV POSTGRES_USER=postgres
 ENV POSTGRES_PASSWORD=guest
 ENV POSTGRES_DB=game_data
