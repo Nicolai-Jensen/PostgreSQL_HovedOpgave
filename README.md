@@ -1,7 +1,7 @@
 Here are the following steps to get the database up and running:
 
 - Download Git reppository
-- Open folder with VSC or not, just easier
+- Open folder with Visual studio Code or not, just easier
 - Run the following commands:
     - docker build -t game_data . || docker build -t "NameOfImage" .
     - docker run -d --network app-network -p 5431:5432 --name TestDB game_data || docker run -d --network "NameOfInternetBirdge" -p 5431:5432 --name "NameOfContainer" "NameOfImage"
