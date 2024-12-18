@@ -6,6 +6,8 @@ Things you need in order for this to work
   - https://www.commandprompt.com/education/how-to-set-windows-path-for-postgres-tools/#:~:text=To%20set%20Windows%20PATH%20for%20PostgreSQL%20tools%2C%20firstly%2C%20open%20System,button%20to%20save%20all%20the
 - Docker Desktop
 
+<h4></h4>
+
 - Download Git reppository
 - Open folder with Visual studio Code or not, just easier
 - Run the following commands:
