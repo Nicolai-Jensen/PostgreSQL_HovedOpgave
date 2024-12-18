@@ -3,8 +3,8 @@ Here are the following steps to get the database up and running:
 - Download Git reppository
 - Open folder with Visual studio Code or not, just easier
 - Run the following commands:
-    - docker build -t game_data . || docker build -t "NameOfImage" .
-    - docker run -d --network app-network -p 5431:5432 --name TestDB game_data || docker run -d --network "NameOfInternetBirdge" -p 5431:5432 --name "NameOfContainer" "NameOfImage"
+    - docker build -t game_data . or docker build -t "NameOfImage" .
+    - docker run -d --network app-network -p 5431:5432 --name TestDB game_data or docker run -d --network "NameOfInternetBirdge" -p 5431:5432 --name "NameOfContainer" "NameOfImage"
 
 - Now you have a container up and running heres how to get the database content
     - pg_restore -U postgres -d game_data -h localhost -p 5431 new_database_backup.dump
